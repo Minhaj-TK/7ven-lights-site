@@ -78,3 +78,20 @@ const toggleMenu = () => {
     menu.classList.toggle('active');
     navMobile.classList.toggle('active');
 }
+
+$("#submit-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+        url:"https://script.google.com/macros/s/AKfycbwQccA_ex_OZPBd2SPtbotylZ3CIEz_puX3jfw332kmNvgYZY5eJiuk6wJtloM0OY7W/exec",
+        data:$("#submit-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Form submitted successfully")
+            window.location.reload()
+        },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    })
+})
