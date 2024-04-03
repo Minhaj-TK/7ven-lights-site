@@ -27,17 +27,12 @@
       <ion-icon class="close" name="close-outline"></ion-icon>
 </a>
 <ul class="nav-bar">
-    <li>
-      <a class="nav-btn active" href="/" onclick="resetHeader();"
-        ><ion-icon name="home-outline"></ion-icon
-      ></a>
-    </li>
-    <li><a class="nav-btn" href="#" data-target="about">About</a></li>
-    <li><a class="nav-btn" href="#" data-target="services">Services</a></li>
-    <li>
-        <a class="nav-btn" href="#" data-target="portfolio">Portfolio</a>
-    </li>
-    <li><a class="nav-btn" href="#" data-target="contact">Contact</a></li>
+  <li><a class="nav-btn active" href="/" onclick="resetHeader();"><ion-icon name="home-outline"></ion-icon></a></li>
+  <li><a class="nav-btn" href="#" data-target="about">About</a></li>
+  <li><a class="nav-btn" href="#" data-target="services">Services</a></li>
+  <li><a class="nav-btn" href="#" data-target="brochure">Brochure</a></li>
+  <li><a class="nav-btn" href="#" data-target="portfolio">Portfolio</a></li>
+  <li><a class="nav-btn" href="#" data-target="contact">Contact</a></li>
 </ul>
 <div class="search">
     <input type="text" placeholder="Search">
@@ -46,23 +41,13 @@
 </header>
     <!-- Mobile Navigation -->
     <ul class="nav-mobile">
-      <li>
-        <a href="/" class="nav-btn active" onclick="resetHeader();">
-          <ion-icon name="home-outline"></ion-icon>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-btn" data-target="about">About</a>
-      </li>
-      <li>
-        <a href="#" class="nav-btn" data-target="services">Services</a>
-      </li>
-      <li>
-        <a href="#" class="nav-btn" data-target="portfolio">Portfolio</a>
-      </li>
-      <li>
-        <a href="#" class="nav-btn" data-target="contact">Contact</a>
-      </li>
+      <li><a href="/" class="nav-btn active" onclick="resetHeader();">
+          <ion-icon name="home-outline"></ion-icon></a></li>
+      <li><a href="#" class="nav-btn" data-target="about">About</a></li>
+      <li><a href="#" class="nav-btn" data-target="services">Services</a></li>
+      <li><a href="#" class="nav-btn" data-target="brochure">Brochure</a></li>
+      <li><a href="#" class="nav-btn" data-target="portfolio">Portfolio</a></li>
+      <li><a href="#" class="nav-btn" data-target="contact">Contact</a></li>
     </ul>
     <!-- Banner -->
 <div class="banner container-fluid">
@@ -217,6 +202,49 @@
       </div>
     </div>
   </section>
+
+    <!-- Brochure Section -->
+    <section id="brochure" class="brochure">
+      <div class="container">
+        <h1>Brochure</h1>
+      </div>
+      <ul id="portfolio-filters" class="d-flex justify-content-center">
+        <li data-filter=".filter-engagement" >Engagement</li>
+        <li data-filter=".filter-gold">Gold</li>
+        <li data-filter=".filter-platinum">Platinum</li>
+        <li data-filter=".filter-diamond">Diamond</li>
+        <li data-filter=".filter-immortal">Immortal</li>
+      </ul>
+  
+      <div class="row portfolio-container">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-engagement">
+          <div class="portfolio-img">
+            <img class="img-fluid" src="./brochure/1.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-gold">
+          <div class="portfolio-img">
+            <img class="img-fluid" src="./brochure/2.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-platinum">
+          <div class="portfolio-img">
+            <img class="img-fluid" src="./brochure/3.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-diamond">
+          <div class="portfolio-img">
+            <img class="img-fluid" src="./brochure/4.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-immortal">
+          <div class="portfolio-img">
+            <img class="img-fluid" src="./brochure/5.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
   <!-- Portfolio Section -->
   <section id="portfolio" class="portfolio">
     <div class="container">
