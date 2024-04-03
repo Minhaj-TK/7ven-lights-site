@@ -676,6 +676,124 @@ section p {
 }
 
 /*-------------------------------------------------------------
+# Brochure Section
+---------------------------------------------------------------*/
+.brochure h1 {
+    margin-bottom: 50px;
+}
+
+.brochure #portfolio-filters {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brochure #portfolio-filters li {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 0.85em;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #111111;
+    transition: 0.3s;
+    padding: 8px 20px;
+    text-align: center;
+}
+
+.brochure #portfolio-filters li::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    height: 2px;
+    width: 50%;
+    background: var(--primary);
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: center;
+}
+
+.brochure #portfolio-filters li:hover::before,
+.brochure #portfolio-filters li.filter-active::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.brochure .portfolio-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.brochure .portfolio-item .portfolio-img {
+    overflow: hidden;
+}
+
+.brochure .portfolio-item .portfolio-img img {
+    transition: all 0.6s;
+}
+
+.brochure .portfolio-item .portfolio-info {
+    position: absolute;
+    opacity: 0;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    z-index: 3;
+    transition: all 0.3s;
+    background: var(--primary);
+    padding: 12px 15px;
+}
+
+.brochure .portfolio-item .portfolio-info h4{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.brochure .portfolio-item .portfolio-info p {
+    color: #f9fcfe;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.brochure .portfolio-item .portfolio-info .preview-link,
+.brochure .portfolio-item .portfolio-info .details-link {
+    position: absolute;
+    right: 40px;
+    font-size: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.brochure .portfolio-item .portfolio-info .preview-link:hover,
+.brochure .portfolio-item .portfolio-info .details-link:hover {
+    color: #111111;
+}
+
+.brochure .portfolio-item .portfolio-info .details-link {
+    right: 10px;
+}
+
+.brochure .portfolio-item:hover .portfolio-img img {
+    transform: scale(1.15);
+}
+
+.brochure .portfolio-item:hover .portfolio-info {
+    opacity: 1;
+}
+
+
+
+/*-------------------------------------------------------------
 # Portfolio Section
 ---------------------------------------------------------------*/
 .portfolio-img,
